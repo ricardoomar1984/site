@@ -1,0 +1,42 @@
+  /* Fade */
+  .fade-enter-active, .fade-leave-active {
+    transition: all 2s
+  }
+  .fade-enter, .fade-leave-to /* .fade-leave-active in <2.1.8 */ {
+    opacity: 0;
+  }
+
+  /* Slide Left */
+  .slide-left-enter-active, .slide-left-leave-active {
+    transition: all 1.5s
+  }
+  .slide-left-enter, .slide-left-leave-to /* .fade-leave-active in <2.1.8 */ {
+    opacity: 0;
+    transform: translateX(20%);
+  }
+
+  /* Slide Right */
+  .slide-right-enter-active, .slide-right-leave-active {
+    transition: all 1.5s
+  }
+  .slide-right-enter, .slide-right-leave-to /* .fade-leave-active in <2.1.8 */ {
+    opacity: 0;
+    transform: translateX(-20%);
+  }
+
+/* Slide Top */
+  .slide-top-enter-active, .slide-top-leave-active {
+    transition: all 1.5s
+  }
+  .slide-top-enter, .slide-top-leave-to /* .fade-leave-active in <2.1.8 */ {
+    opacity: 0;
+    transform: translateY(20%);
+  }
+/* Slide Bottom */
+  .slide-bottom-enter-active, .slide-bottom-leave-active {
+    transition: all 1.5s
+  }
+  .slide-bottom-enter, .slide-bottom-leave-to /* .fade-leave-active in <2.1.8 */ {
+    opacity: 0;
+    transform: translateY(-20%);
+  }
