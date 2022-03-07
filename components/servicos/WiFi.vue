@@ -14,7 +14,7 @@
 
 <script>
 export default {
-  name: 'CabeamentoEstruturado',
+  name: 'WiFi',
   props: {
     image: {
       type: String,

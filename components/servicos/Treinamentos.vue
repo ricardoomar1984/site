@@ -14,7 +14,7 @@
 
 <script>
 export default {
-  name: 'CabeamentoEstruturado',
+  name: 'Treinamentos',
   props: {
     image: {
       type: String,

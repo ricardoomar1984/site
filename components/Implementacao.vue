@@ -35,11 +35,7 @@
             </v-col>
           </v-row>
         </v-container>
-        <v-dialog
-          v-model="dialog"
-          fullscreen hide-overlay
-          transition="dialog-bottom-transition"
-        >
+        <v-dialog v-model="dialog" fullscreen hide-overlay transition="dialog-bottom-transition">
           <v-card>
             <v-toolbar>
               <v-btn icon @click="dialog = false">
@@ -50,7 +46,7 @@
             <v-container>
               <v-row justify="center">
                 <v-col md="8">
-                  <component :is="servicesId" :image="servicesImage" />
+                  <component :is="servicesId" :image="servicesImage" :title="servicesTitle" />
                 </v-col>
               </v-row>
             </v-container>
@@ -64,10 +60,15 @@
 
 <script>
 import cabeamentoEstruturado from './servicos/CabeamentoEstruturado';
+import wiFi from './servicos/WiFi';
+import redesSeguranca from './servicos/RedesSeguranca';
+import cloudComputing from './servicos/CloudComputing';
+import devops from './servicos/Devops';
+import treinamentos from './servicos/Treinamentos';
 
 export default {
   name: 'Implementacao',
-  components: { cabeamentoEstruturado },
+  components: { cabeamentoEstruturado, wiFi, redesSeguranca, cloudComputing, devops, treinamentos },
   props: {
     title: {
       type: String,
@@ -79,7 +80,7 @@ export default {
       services: [
         { id: 'cabeamento-estruturado', title: 'Cabeamento estruturado', image: '/servicos/cabeamento-estruturado.jpg'},
         { id: 'wi-fi', title: 'Wi-Fi', image: '/servicos/wifi.jpg'},
-        { id: 'redes-e-seguranca', title: 'Consultoria em Redes e segurança', image: '/servicos/redes-e-seguranca.jpg'},
+        { id: 'redes-seguranca', title: 'Consultoria em Redes e segurança', image: '/servicos/redes-e-seguranca.jpg'},
         { id: 'cloud-computing', title: 'Cloud Computing', image: '/servicos/cloud-computing.jpg'},
         { id: 'devops', title: 'DevOps', image: '/servicos/devops.jpg'},
         { id: 'treinamentos', title: 'Treinamentos', image: '/servicos/treinamentos.jpg'},

@@ -92,24 +92,24 @@ export default {
   data() {
     return {
       socialItems: [
-        {
-          color: 'pink darken-2',
-          icon: 'mdi-instagram',
-          title: 'Instagram',
-          url: 'https://instagram.com/meliga',
-        },
-        {
-          color: 'light-blue lighten-1',
-          icon: 'mdi-twitter',
-          title: 'Twitter',
-          url: 'https://twiiter.com/meliga',
-        },
-        {
-          color: 'blue darken-2',
-          icon: 'mdi-linkedin',
-          title: 'Linkedin',
-          url: 'https://linkedin.com/meliga',
-        },
+        // {
+        //   color: 'pink darken-2',
+        //   icon: 'mdi-instagram',
+        //   title: 'Instagram',
+        //   url: 'https://instagram.com/meliga',
+        // },
+        // {
+        //   color: 'light-blue lighten-1',
+        //   icon: 'mdi-twitter',
+        //   title: 'Twitter',
+        //   url: 'https://twiiter.com/meliga',
+        // },
+        // {
+        //   color: 'blue darken-2',
+        //   icon: 'mdi-linkedin',
+        //   title: 'Linkedin',
+        //   url: 'https://linkedin.com/meliga',
+        // },
         {
           color: 'green lighten-1',
           icon: 'mdi-whatsapp',

@@ -14,7 +14,7 @@
 
 <script>
 export default {
-  name: 'CabeamentoEstruturado',
+  name: 'CloudComputing',
   props: {
     image: {
       type: String,

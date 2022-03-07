@@ -14,7 +14,7 @@
 
 <script>
 export default {
-  name: 'CabeamentoEstruturado',
+  name: 'RedesSeguranca',
   props: {
     image: {
       type: String,
