@@ -6,11 +6,11 @@
           <v-row align="center">
             <v-col class="text-center pb-16">
               <transition appear name="slide-bottom">
-                <h2 v-if="title" class="text-h2 mb-4 primary--text" v-text="title" />
+                <h2 v-if="title" class="text-h4 text-md-h2 mb-4 primary--text" v-text="title" />
               </transition>
               <transition appear name="fade">
                 <div>
-                  <div class="primary--text text--darken-4 text-h4 mb-4">
+                  <div class="primary--text text--darken-4 text-h6 text-md-h4 mb-4">
                     Pronto para discutir o seu projeto?
                   </div>
                   <p class="mb-8">
@@ -24,7 +24,9 @@
                     <v-avatar color="secondary" size="48" class="mb-2">
                       <v-icon color="white" v-text="'mdi-cellphone'" />
                     </v-avatar>
-                    <h2>Telefone</h2>
+                    <h2 class="text-h6 text-md-h5">
+                      Telefone
+                    </h2>
                     <a href="tel:+5511949013963" class="text-decoration-none" itemprop="telephone">
                       +55 (11) 94901-3963
                     </a>
@@ -35,7 +37,9 @@
                     <v-avatar color="primary darken-2" size="48" class="mb-2">
                       <v-icon color="white" v-text="'mdi-email'" />
                     </v-avatar>
-                    <h2>Email</h2>
+                    <h2 class="text-h6 text-md-h5">
+                      Email
+                    </h2>
                     <a href="mailto:meliga@gmail.com" class="text-decoration-none" itemprop="email">
                       suporte@meliga.com.br
                     </a>
@@ -46,7 +50,9 @@
                     <v-avatar color="accent darken-2" size="48" class="mb-2">
                       <v-icon color="white" v-text="'mdi-forum'" />
                     </v-avatar>
-                    <h2>Fique Conectado</h2>
+                    <h2 class="text-h6 text-md-h5">
+                      Fique Conectado
+                    </h2>
                     <v-btn
                       v-for="(item, index) in socialItems"
                       :key="index"

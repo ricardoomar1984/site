@@ -1,13 +1,11 @@
 <template>
   <v-row>
-    <v-col md="4">
-      <v-img :src="image" />
-    </v-col>
-    <v-col>
-      <h2 v-text="title" />
+    <v-col cols="12">
+      <v-img :aspect-ratio="16/9" :src="image" />
     </v-col>
     <v-col cols="12">
-      <!-- text -->
+      <h2 class="mb-2" v-text="title" />
+      Contacte-nos para mais informações sobre nossos treinamentos em vários setores da Tecnologia da Informação
     </v-col>
   </v-row>
 </template>

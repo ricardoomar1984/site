@@ -21,11 +21,11 @@
             <v-col>
               <div class="px-xl-16 mx-md-8">
                 <transition appear name="fade">
-                  <h2 v-if="title" class="text-h2 mb-4 primary--text" v-text="title" />
+                  <h2 v-if="title" class="text-h4 text-md-h2 mb-4 primary--text" v-text="title" />
                 </transition>
                 <transition appear name="slide-top">
                   <div>
-                    <div class="primary--text text--darken-4 text-h4 mb-4">
+                    <div class="primary--text text--darken-4 text-h6 text-md-h4 mb-4">
                       Conheça nossos serviços realizados
                     </div>
                     <p>Estamos extremamente orgulhosos do nosso trabalho orientado a resultados e focado no cliente. Seja uma implementação simples ou uma solução corporativa sofisticada, nosso trabalho se destaca em engajamento e eficácia</p>
@@ -36,17 +36,24 @@
           </v-row>
         </v-container>
         <v-dialog v-model="dialog" fullscreen hide-overlay transition="dialog-bottom-transition">
-          <v-card>
-            <v-toolbar>
+          <v-card color="grey lighten-4">
+            <v-toolbar color="primary darken-2" dark>
               <v-btn icon @click="dialog = false">
                 <v-icon v-text="'mdi-arrow-left'" />
               </v-btn>
               <v-toolbar-title v-text="servicesTitle" />
             </v-toolbar>
-            <v-container>
+            <v-container class="py-16 white">
               <v-row justify="center">
                 <v-col md="8">
                   <component :is="servicesId" :image="servicesImage" :title="servicesTitle" />
+                  <v-divider class="my-8" />
+                  <div class="text-center">
+                    <v-btn color="primary darken-2" large @click="dialog = false">
+                      <v-icon left v-text="'mdi-arrow-left'" />
+                      Voltar
+                    </v-btn>
+                  </div>
                 </v-col>
               </v-row>
             </v-container>

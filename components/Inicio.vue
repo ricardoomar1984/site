@@ -3,15 +3,15 @@
     <v-container>
       <v-responsive :aspect-ratio="3/1" content-class="d-flex flex-column">
         <v-row v-intersect="onIntersect" justify="center" align="center">
-          <v-col cols="12" md="8" class="text-center">
+          <v-col cols="12" md="8" lg="6" class="text-center">
             <transition appear name="fade">
               <h1 class="text-h4 text-md-h2 mb-4 mb-md-16">
-                Otimize sua Infra Estrutura
+                Otimize sua Infraestrutura
               </h1>
             </transition>
             <transition appear name="slide-top">
               <div class="text-md-h4">
-                Explore nossos serviços e soluções de tecnologia para sua empresa
+                Explore nossos serviços e soluções de tecnologia e devops para sua empresa
               </div>
             </transition>
           </v-col>
@@ -39,7 +39,7 @@ export default {
 
 <style lang="scss">
   .hero {
-    background: url('/hero.jpg') center center no-repeat;
+    background: url('/hero-image.jpg') center center no-repeat;
     background-size: cover;
     position: relative;
     > .container {
@@ -55,7 +55,7 @@ export default {
       right: 0;
       bottom: 0;
       z-index: 1;
-      background-color: rgba(0,0,0,0.6);
+      background-color: rgba(0,0,0,0.4);
     }
   }
 </style>
