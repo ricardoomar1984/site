@@ -18,7 +18,7 @@
         </v-row>
         <div class="text-center">
           <v-btn icon x-large :to="{ path: '/', hash: '#sobre'}" @click="$vuetify.goTo('#sobre', {duration: 0, easing: 'easeOutQuad'})">
-            <v-icon v-text="'mdi-chevron-double-down'" />
+            <v-icon>mdi-chevron-double-down</v-icon>
           </v-btn>
         </div>
       </v-responsive>
